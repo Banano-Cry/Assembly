@@ -34,6 +34,19 @@ _print:
 	pop edx
 	ret
 
+;Print a Linefeeds
+_printLF:
+	call _print
+	push eax
+	mov eax, 0Ah
+	push eax
+	mov eax, esp
+	call _print
+	pop eax
+	pop eax
+	ret
+
+
 ;Exit program
 _quit:
 	mov eax, 1

@@ -6,7 +6,7 @@ global _start
 
 _start:
 	mov eax, msg
-	call _CalculateLen
+	call _CalculateLen ;llama a la subrutina _CalculateLen
 	
 	mov edx, eax
 	mov ecx, msg
@@ -20,6 +20,7 @@ _start:
 
 
 _CalculateLen:
+	push ebx ;Guardamos en la pila el valor de ebx, por si el ordenador lo estaba usando
 	mov ebx, eax
 	
 _NextChar:
@@ -30,4 +31,5 @@ _NextChar:
 
 _Finished:
 	sub eax, ebx
+	pop ebx ;Recuperamos el valor de ebx de la pila
 	ret

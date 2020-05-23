@@ -9,14 +9,15 @@ _start:
 	mov ebx, msg
 	mov eax, msg
 
-nextchar:
+_nextchar:
 	cmp byte [eax], 0
-	jz finished
-	add eax, 1
-	jmp nextchar
+	jz _finished
+	add eax, 1  ;tambien se puede usar inc eax
+	jmp _nextchar
 
-finished:
+_finished:
 	sub eax, ebx
+
 	mov edx, eax
 	mov ecx, msg
 	mov eax, 4
