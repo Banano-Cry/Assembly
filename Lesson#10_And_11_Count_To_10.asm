@@ -5,17 +5,12 @@ global _start
 
 _start:
 	mov ecx, 0
-
-_nextNumber:
+	
+nextNumber:
 	add ecx, 1
 	mov eax, ecx
-	add eax, 48
-	push eax
-	mov eax, esp
-	call _printLF
-	
-	pop eax
+	call _iprintLF
 	cmp ecx, 10
-	jne _nextNumber
-
+	jne nextNumber
+	
 	call _quit
