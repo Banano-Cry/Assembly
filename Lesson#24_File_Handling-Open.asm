@@ -9,7 +9,7 @@ _start:
 	mov	eax, 8		;Creat_Sys_Call
 	int	80h
 
-	mov	edx, 12		;Cantidad de bytes del mensaje
+	mov	edx, 19		;Cantidad de bytes del mensaje
 	mov 	ecx, contents	;Mensaje
 	mov 	ebx, eax	;El descifrador de archivo que apunta al archivo
 	mov 	eax, 4		;Write_Sys_Call
@@ -25,5 +25,5 @@ _start:
 
 
 section	.data
-filename	db	'readme.txt',0h
-contents	db	'Hello World!',0h
+filename	db	'LeccionEjemplo.txt',0h
+contents	db	'Prueba de escritura',0h

@@ -10,7 +10,7 @@ _start:
 	int	80h
 
 	mov	edx, 2
-	mov	ecx, 2
+	mov	ecx, 0
 	mov	ebx, eax
 	mov	eax, 19		;lseek
 	int	80h

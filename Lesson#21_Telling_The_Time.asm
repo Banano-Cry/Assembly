@@ -14,4 +14,4 @@ _start:
 	call	_quit
 
 section .data
-msg	db	'Seconds since jan 01 1970: ', 0h
+msg	db	'Segundos desde la fecha 01 1970: ', 0h

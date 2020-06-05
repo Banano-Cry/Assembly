@@ -3,8 +3,8 @@
 section .text
 global _start
 _start:
-	mov eax, 90
-	mov ebx, 9
+	mov eax, 144
+	mov ebx, 13
 	div ebx
 	call _iprint
 
@@ -17,4 +17,4 @@ _start:
 	call _quit
 
 section .data
-msg db ' remainder '
+msg db ' residuo: '

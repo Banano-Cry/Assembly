@@ -4,8 +4,8 @@ section .text
 global _start
 _start:
 	
-	mov eax, 90
-	mov ebx, 9
+	mov eax, 45
+	mov ebx, 37
 	mul ebx
 	call _iprintLF
 

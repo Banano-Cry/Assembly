@@ -10,7 +10,7 @@ nextNumber:
 	add ecx, 1
 	mov eax, ecx
 	call _iprintLF
-	cmp ecx, 10
+	cmp ecx, 100
 	jne nextNumber
 	
 	call _quit

@@ -23,5 +23,5 @@ child:
 	call	_quit
 
 section .data
-childMsg	db	'Child process',0h
-parentMsg	db	'Parent process',0h
+childMsg	db	'Proceso hijo',0h
+parentMsg	db	'Proceso Padre',0h

@@ -39,6 +39,6 @@ finished:
 
 
 section .data
-msg1 db 'Jumping to finished label.', 0h
-msg2 db 'Inside subroutine number: ', 0h
-msg3 db 'Inside subroutine "finished".', 0h
+msg1 db 'Saltando a otra rutina.', 0h
+msg2 db 'Dentro de la subrutina: ', 0h
+msg3 db 'Dentro de la subrutina "final".', 0h

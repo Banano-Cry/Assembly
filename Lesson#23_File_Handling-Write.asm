@@ -9,7 +9,7 @@ _start:
 	mov	eax, 8
 	int 	80h
 
-	mov	edx, 12
+	mov	edx, 16
 	mov	ecx, contents
 	mov	ebx, eax
 	mov	eax, 4
@@ -18,5 +18,5 @@ _start:
 	call	_quit
 
 section .data
-filename	db	'readme.txt',0h
-contents	db	'Hello World!',0h
+filename	db	'LeccionEjemplo.txt',0h
+contents	db	'Prueba escritura',0h

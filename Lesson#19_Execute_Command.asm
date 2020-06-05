@@ -14,8 +14,8 @@ _start:
 
 section .data
 command		 db	 '/bin/echo',0h
-arg1 		 db	 'Hello World!', 0h
-;command		 db	 '/bin/ls',0h
+arg1 		 db	 'Usando el comando echo', 0h
+;command	 db	 '/bin/ls',0h
 ;arg1		 db	 '-l',0h
 ;command 	 db	 '/bin/sleep',0h
 ;arg1		 db 	 '5',0h
