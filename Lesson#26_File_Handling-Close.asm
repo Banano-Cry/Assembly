@@ -4,12 +4,12 @@ section .text
 global 	_start
 
 _start:
-	mov	ecx, 777
+	mov	ecx, 0777
 	mov	ebx, filename
 	mov	eax, 8
 	int	80h
 	
-	mov	edx, 12
+	mov	edx, 19
 	mov	ecx, contents
 	mov	ebx, eax
 	mov	eax, 4
@@ -20,7 +20,7 @@ _start:
 	mov	eax, 5
 	int	80h
 
-	mov	edx, 12
+	mov	edx, 19
 	mov	ecx, filecontents
 	mov	ebx, eax
 	mov	eax, 3
@@ -39,5 +39,5 @@ section	.bss
 filecontents	resb	255
 
 section	.data
-filename	db	'readme.txt',0h
-contents	db	'Hello World!',0h
+filename	db	'LeccionEjemplo.txt',0h
+contents	db	'Prueba de escritura',0h
